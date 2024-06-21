@@ -1,0 +1,108 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: Figtree, sans-serif;
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Figtree, sans-serif;
+  src: url('../fonts/Figtree-Regular.woff2') format(woff2);
+  font-size: 400;
+}
+@font-face {
+  font-family: Figtree, sans-serif;
+  src: url('../fonts/Figtree-SemiBold.woff2') format(woff2);
+  font-size: 500;
+}
+@font-face {
+  font-family: Figtree, sans-serif;
+  src: url('../fonts/Figtree-ExtraBold.woff2') format(woff2);
+  font-size: 800;
+}
+.container {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 384px;
+  border-radius: 20px;
+  padding: 24px;
+  font-size: 14px;
+  line-height: 150%;
+  filter: drop-shadow(16px 16px hsl(0, 0%, 7%));
+  margin: 0 10px;
+}
+
+.blog-card__img {
+  max-height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.blog-card__learning-tag {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
+  font-weight: 800;
+  margin-top: 24px;
+  font-size: 12px;
+}
+.blog-card__date {
+  padding-top: 12px;
+  line-height: inherit;
+}
+.blog-card__title {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: inherit;
+}
+.blog-card:hover .blog-card__title {
+  color: hsl(47, 88%, 63%);
+}
+
+.blog-card__paragraph {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 150%;
+}
+.blog-card__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.blog-card__user-avatar {
+  width: 32px;
+  height: 32px;
+}
+.blog-card__user-name {
+  font-weight: 800;
+}
+
+@media (max-width: 500px) {
+  .blog-card {
+    filter: drop-shadow(8px 8px hsl(0, 0%, 7%));
+  }
+}
